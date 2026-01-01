@@ -1,0 +1,105 @@
+/*--------------Cart-------------*/
+
+.cartpage h1{
+    text-align: center;
+    margin-top: 15px;
+    color: rgb(138, 95, 29);
+}
+
+.checkout{
+    border-radius: 3px;
+    border: 0px;
+    background-color: rgb(190, 125, 27);
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.showbill{
+  border-radius: 10px;
+    border: 0px;
+    background-color: rgb(190, 125, 27);
+    height: 40px;
+    width: 150px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    margin-left: 650px;
+}
+
+.itemname{
+    font-size: 30px;
+    /* color: rgb(152, 38, 38); */
+    color:rgb(190, 125, 27);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 40px;
+}
+
+/*---------------Sub Button--------------*/
+.qtysub{
+    border: 0;
+    border-radius: 8px;
+    color: black;
+    background-color: rgb(190, 125, 27);
+    width: 50px;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 80px;
+    margin-left: -70px;
+}
+
+/*---------------Add Button--------------*/
+.qtyadd{
+    border: 0;
+    border-radius: 8px;
+    color: black;
+    background-color: rgb(190, 125, 27);
+    width: 50px;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 80px;
+}
+p{
+  font-size: 30px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid rgb(169, 134, 89);
+    padding: 10px;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 19px;
+  }
+  
+  th {
+    background-color:rgb(232, 162, 72);
+  }
+  
+  tfoot tr {
+    font-weight: bold;
+  } 
+
+  .input1, div.submenu {
+    display: none;
+  }
+  
+  /*position the label*/
+  #label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 4px;
+  }
+  
+  /*show the submenu when input is checked*/
+  .input1:checked~div.submenu {
+    display: block;
+  }
+  

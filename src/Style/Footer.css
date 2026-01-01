@@ -1,0 +1,78 @@
+/*-----------Footer----------------*/
+.footer {
+    padding: 10px 10px;
+    bottom: 1;
+    margin-top:0px;
+    background: rgb(230, 196, 158);
+  }
+
+/*---------------Copy----------*/
+ .fcopy > h4{
+  
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+  }
+/*-----------------Link-------------*/
+ ul{
+  margin-left: 50px;
+  text-align: left;
+  font-size: 30px;
+  font-weight: bolder;
+  height: 170px;
+}
+
+ ul li{
+  font-size: 15px;
+  margin-left: 30px;
+  list-style: none;
+}
+
+.link ul{
+  margin-top: -195px;
+  margin-left: 620px;
+  text-align: left;
+  font-size: 36px;
+  font-weight: bolder;
+}
+
+.lbl b{
+  font-weight: bolder;
+
+}
+.lbl p{
+  font-size: 34px;
+  margin-left: 78px;
+}
+
+.link{
+  margin-top: -255px;
+}
+
+.link ul li{
+  font-size: 15px;
+  margin-left: 90px;
+  margin-top: 15px;
+}
+
+/*-----------------Logo---------------*/
+.follow{
+  text-align: right;
+  justify-content: center;
+  margin-left: 1100px;
+  margin-top: -120px;
+}
+.follow ul {
+  font-size: 32px;
+  margin-top: -210px;
+}
+
+
+.icons .fa{
+	color: #000000;
+	margin: 20px 15px;
+  margin-left: 8px;
+	cursor: pointer;
+	padding: 1px 1px;
+}

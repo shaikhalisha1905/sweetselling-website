@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Signup Form</title>
+    <style>
+        .custinfo {
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .custtab {
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            align-items: left;
+        }
+
+        .custin {
+            height: 30px;
+            font-size: 18px;
+            width: 250px;
+        }
+
+        .custtxt {
+            height: 30px;
+            font-size: 18px;
+            width: 250px;
+        }
+
+        .paylbl {
+            height: 30px;
+            font-size: 16px;
+            width: 258px;
+        }
+
+        .btnsubchk {
+            border-radius: 5px;
+            border: 0px;
+            background-color: rgb(170, 127, 74);
+            height: 40px;
+            width: 250px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body style="text-align: center;">
+
+    <div>
+        <p style="color:rgb(189, 140, 81);text-align: center;font-size: 45px;font-weight: bold;">Checkout</p>
+    </div>
+
+    <div>
+        <h1 style="font-family:'Segoe UI';font-size: 35px;">Customer Information</h1>
+    </div>
+    <br />
+    <div class='custtab'>
+        <form action="/checkout" method="post">
+            <table align="center">
+                <tr>
+                    <td><label class="inlbl">Enter Name :</label></td>
+                    <td><input type="text" name="name" id="name" placeholder="Name" class="custin" required></input>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Enter Address : </label></td>
+                    <td><textarea cols={40} rows={7} name="adrress" id="address" class="custtxt">
+                        </textarea></td>
+                </tr>
+
+                <tr>
+                    <td><label>Enter Pincode : </label></td>
+                    <td><input type='text' name="pincode" id="pincode" placeholder='Pincode' class="custin"></input>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Enter City : </label></td>
+                    <td><input type='text' name="city" id="city" placeholder='City' class="custin" required></input>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Enter Phone No : </label></td>
+                    <td><input type='text' name="phone" id="phone" placeholder='Mobile' class="custin" required></input>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Select Payment Mode : </label></td>
+                    <td><select class="paylbl" required>
+                            <option>Payment</option>
+                            <option>UPI</option>
+                            <option>Cash ON Delivery</option>
+                            <option>Credit Card</option>
+                        </select></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Place Order" class='btnsubchk' onClick={con}></input></td>
+                </tr>
+            </table>
+        </form>
+        <br /><br />
+    </div>
+</body>
+
+</html>

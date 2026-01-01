@@ -1,0 +1,61 @@
+/*-----------------IMAGE Center Text--------------*/
+
+.centered{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.centered h2{
+    color:black;
+    font-size: 39px;
+    margin-left: 185px;
+    font-weight:bold;
+}
+
+.centered p{
+    margin-left: 40px;
+    font-size: 21px;
+    color: white;
+    background-color: rgba(90, 90, 84, 0.6);
+    
+}
+
+/*------------------About Content----------------------*/
+
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5rem; 
+    
+}
+
+.about img{
+    height: 640px;
+}
+
+
+.intro{
+    margin-top: 80px;
+    flex: 1;
+}
+
+.intro h1{
+    font-family: cursive;
+    color: rgb(124, 93, 25);
+    text-align: center;
+    margin-right: 100px;
+    font-size: 50px;
+    font-weight: 800px;
+    margin-bottom: 55px;
+}
+
+.intro p{
+    font-family: 'Lucida Sans';
+    flex-wrap: wrap;
+    font-size:25px;
+    justify-content: center;
+    overflow-wrap:break-word;
+}

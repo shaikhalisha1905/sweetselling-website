@@ -1,0 +1,53 @@
+.container{
+    height: 500px;
+    margin: auto;
+    padding: 40px 50px;
+    border-radius: 30px;
+    justify-content: center;
+}
+.container h1{
+    font-family:'Lucida Sans';
+    margin-bottom: 40px;
+    color: rgb(125, 92, 48);
+    margin-left: 550px;
+    font-size: 45px;
+}
+.container form{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 600px;
+    margin-top: -90px;
+}
+label{
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 490px;
+    color: rgb(170, 127, 70);
+}
+
+.logbtnsub{
+    height: 45px;
+    width: 100px;
+    border-radius: 6px;
+    border: 0px;
+    background-color: rgb(187, 111, 60);
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 17px;
+    margin-left: 590px;
+}
+.logbtnsub:hover{
+    background-color: black;
+    color: white;
+}
+input{
+    border-radius: 8px;
+    height: 40px;
+    width: 250px;
+}
+.contlbl{
+    color: black;
+    text-align: left;
+    font-size: 18px;
+    margin-left: 0px;
+}

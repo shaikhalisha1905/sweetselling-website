@@ -1,0 +1,56 @@
+/*----------------Title-----------*/
+.campus{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.campus h1{
+    font-family:Apple Chancery, Brush Script ,Segoe Script,Lucida Handwriting;
+    color: brown;
+    font-weight:bolder;
+	margin-bottom: 50px;
+}
+
+/*--------------------Image-------------*/
+.campus-col{
+	flex-basis: 32%;
+	border-radius: 20px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+}
+.campus-col>img{
+	display: inline-block;
+    height: 500px;
+    width: 600px;
+}
+
+/*---------------Layer----------------*/
+.layer{
+	background: transparent;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	transition: 0.5s;
+}
+.layer:hover{
+	background: rgb(185, 185, 158,0.6);
+}
+.layer h3{
+	width: 100%;
+	font-weight: 500;
+	color: rgb(65, 61, 15);
+	font-size: 26px;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+	position: absolute;
+	transition: 0.5s;
+}
+.layer:hover h3{
+	bottom: 49%;
+	opacity: 1;
+}

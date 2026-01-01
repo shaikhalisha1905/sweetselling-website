@@ -1,0 +1,95 @@
+/* .home {
+    font-family: Arial, sans-serif;
+    
+  } */
+/*-----------------Title---------*/  
+  .our-products {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .our-products h2 {
+    font-size: 2.5em;
+    margin-top: 9px;
+    margin-bottom: -90px;
+    color: orange;
+  }
+
+  .heading{
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 1px;
+    font-weight: bolder;
+    color: orange;
+    justify-content: center;
+  }
+
+  /*-----------------Card----------------*/
+  .p-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .p-card {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    height: 320px;
+  }
+  
+  .p-card img {
+    height: 200px;
+    width: 100%;
+    
+  }
+  
+  .p-card h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+  }
+  
+  .p-card p {
+    font-size: 1em;
+    color: #555;
+    padding: 0 15px 20px;
+  }
+
+  .p-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(61, 57, 57, 0.706);
+    width: 300px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: arial;
+    margin-left: 20px;
+    text-align: center;
+    position: relative;
+  }
+/*------------------View Button---------------*/
+  .view button{
+    border: 0px;
+    border-radius: 10px;
+    align-items: center;
+    margin-left: 700px;
+    margin-top: -90px;
+    width: 120px;
+    height: 50px;
+    background-color: rgb(160, 97, 61);
+    margin-bottom: 20px;
+  }
+
+  .view span{
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  

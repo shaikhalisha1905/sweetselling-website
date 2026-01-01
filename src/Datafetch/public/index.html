@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Data Table</title>
+    <style>
+        table {
+            width: 70%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            text-align: left;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th {
+            font-size: 20px;
+            background-color:rgb(202, 159, 104);
+            text-align: center;
+        }
+        td{
+            font-weight: bold;
+            font-size: 17px;
+            background-color:rgb(202, 159, 104,0.3) ;
+        }
+        .managelog{
+            margin-left:400px;
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+            font-size: 28px;
+            /* background-color: rgba(156, 137, 111); */
+        }
+        .managep{
+            margin-left: 350px;
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+            font-size: 28px;
+            border-radius: 9px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color:rgb(194, 148, 79); font-weight: bold;font-size: 50px;">Registered Customers</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Created At</th>
+            </tr>
+        </thead>
+        <tbody id="registerTableBody">
+            <!-- Data will be inserted here dynamically -->
+        </tbody>
+    </table>
+
+    <script>
+        // Function to fetch data from MongoDB and display it in the table
+        async function fetchRegisters() {
+            try {
+                const response = await fetch('/fetch-registers'); // Fetch data from the server
+                const registers = await response.json(); // Parse the JSON response
+                const tableBody = document.getElementById('registerTableBody');
+                
+                // Insert each register data into the table
+                registers.forEach(register => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${register.name}</td>
+                        <td>${register.email}</td>
+                        <td>${register.phone}</td>
+                        <td>${new Date(register.createdAt).toLocaleString()}</td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+            } catch (error) {
+                console.error('Error fetching register data:', error);
+            }
+        }
+        // Fetch data when the page loads
+        window.onload = fetchRegisters;
+    </script>
+</body>
+</html>
