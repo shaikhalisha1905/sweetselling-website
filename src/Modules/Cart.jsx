@@ -13,7 +13,7 @@ export default function Cart({ cart, cartIndex }) {
 
     useEffect(() => {
         setcart2(cart)
-    }, { cart })
+    }, [cart ])
 
     const handleRemove = (id) => {
         const arr = cart2.filter((Item) => Item.id !== id);
@@ -42,7 +42,7 @@ export default function Cart({ cart, cartIndex }) {
                 <h1 style={{ textAlign: "center", fontFamily: " Arial Narrow Bold", fontWeight: "bold" }}>Shopping Cart</h1>
                 {
                     cart2.length === 0 ? (
-                        <><div><img src={empty} style={{ marginLeft: "520px", marginTop: "50px", height: "320px" }}></img></div>
+                        <><div><img src={empty} alt="product" style={{ marginLeft: "520px", marginTop: "50px", height: "320px" }}></img></div>
                             <div><Link to="/product"> <button style={{ border: "0px", borderRadius: "9px", marginLeft: "660px", marginTop: "50px", backgroundColor: "rgb(190, 125, 27)", height: "45px", width: "180px", fontWeight: "bold" }}><span>Start Shopping</span></button></Link>  </div>
                         </>
                     ) :
