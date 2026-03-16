@@ -19,7 +19,7 @@ const ProductForm = ({  onSubmit }) => {
         }
     };
 
-    const handleAddOrUpdateProduct = async (product) => {
+    /*const handleAddOrUpdateProduct = async (product) => {
         try {
             if (selectedProduct) {
                 // Update product
@@ -33,7 +33,7 @@ const ProductForm = ({  onSubmit }) => {
         } catch (error) {
             console.error('Error saving product:', error);
         }
-    };
+    };*/
 
     const handleDeleteProduct = async (id) => {
         try {
