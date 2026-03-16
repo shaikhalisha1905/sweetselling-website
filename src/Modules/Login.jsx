@@ -52,12 +52,12 @@ export default function Login() {
       flag = 1;
     }
 
-    if (values.username == Admin_name && values.password == Admin_password) {
+    if (values.username === Admin_name && values.password === Admin_password) {
       alert("Login successfull...");
       window.location.href = "/admin";
 
     }
-    else if (flag == 1) {
+    else if (flag === 1) {
       alert("Login successfull...");
        window.location.href = "/";                   
     }
