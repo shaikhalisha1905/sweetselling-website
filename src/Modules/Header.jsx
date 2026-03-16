@@ -12,28 +12,28 @@ const Header = (props) => {
 
     const search = () => {
         let ser1 = document.getElementById('ser').value;
-        if (ser1 == "product") {
+        if (ser1 === "product") {
             window.location.href = "/product";
         }
-        else if (ser1 == "contact") {
+        else if (ser1 === "contact") {
             window.location.href = "/contact";
         }
-        else if (ser1 == "about") {
+        else if (ser1 === "about") {
             window.location.href = "/about";
         }
-        else if (ser1 == "home") {
+        else if (ser1 === "home") {
             window.location.href = "/";
         }
-        else if (ser1 == "kajukatli") {
+        else if (ser1 === "kajukatli") {
             window.location.href = "/kajukatlipage";
         }
-        else if (ser1 == "dryfruit") {
+        else if (ser1 === "dryfruit") {
             window.location.href = "/dryfruit";
         }
-        else if (ser1 == "ghee") {
+        else if (ser1 === "ghee") {
             window.location.href = "/gheesweet";
         }
-        else if (ser1 == "other") {
+        else if (ser1 === "other") {
             window.location.href = "/othersweet";
         }
     }
