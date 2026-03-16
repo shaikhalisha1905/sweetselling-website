@@ -25,15 +25,15 @@ import Admin from './Modules/Admin';
 function App() {
 
     const [cart, setCart] = useState([])
-    const [showCart, setShowCart] = useState(false)
+    const [ setShowCart] = useState(false)
     const addToCart = (data) => {
         setCart([...cart, { ...data, quantity: 1 }])
         alert("Product added");
     }
 
-    const handleShow = (value) => {
+    /*const handleShow = (value) => {
         setShowCart(value)
-    }
+    }*/
 
 
     const [products, setProducts] = useState([]);
